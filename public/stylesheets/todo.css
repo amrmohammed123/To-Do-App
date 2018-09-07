@@ -1,0 +1,154 @@
+*
+{
+    box-sizing: border-box;
+}
+.clearfix
+{
+    clear:both;
+}
+body
+{
+    background-color:rgb(54, 186, 219);
+}
+.container
+{
+    width:70%;
+    margin:auto;    
+}
+/* start user-info styling */
+.user-info p
+{
+    color:#FFF; 
+    display:inline-block;
+    margin:0;
+    margin-top:5px;
+}
+.user-info button
+{
+    float:right;
+    color:#FFF;
+    background-color:rgb(22, 189, 92);
+    border:none;
+    padding:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+.user-info button a
+{
+    text-decoration:none;
+    color:#FFF;
+}
+/* end user-info styling */
+
+
+
+/*start add-items styling */
+.container .add-items
+{
+    background-color:rgb(156, 26, 150);
+    padding-top:40px;
+    padding-bottom:40px;
+    margin-top:20px;    
+}
+.container .add-items input
+{
+    margin-left:4%;
+    width:calc(100% - 8% - 1% - 30px);
+    height:30px;
+}
+.container .add-items button
+{
+    text-align:center;
+    background-color:rgb(22, 189, 92);
+    border:none;
+    color:#FFF;
+    margin-left:1%;
+    margin-right:4%;
+    width:5%;
+    width:30px;
+    height:30px;
+    font-size:15px;
+    font-weight:lighter;
+    text-transform:capitalize;
+    cursor:pointer;
+}
+/*end add-items styling */
+/*start list-item styling */
+.container .list-item 
+{
+    position:relative;
+}
+.container .list-item
+{
+    background-color:#FFF;
+    border-top:1px solid #999;
+}
+.container .list-item p
+{
+    display:inline-block;
+    width:calc(100% - 70px);
+    margin-top:0;
+    margin-bottom:0;
+    height:40px;
+    padding-top:10px;
+    padding-left:10px;
+}
+@media only screen and (max-width:700px)
+{
+    .container .list-item p
+    {
+        font-size:12px;
+    }
+}
+.container .list-item input
+{
+    z-index:2;
+    opacity:0;
+    cursor:pointer;
+    position:absolute;
+    top:5px;
+    right:10px;
+    bottom:5px;
+    width:30px;
+    height:30px;
+    margin:0;
+}
+.container .list-item .checkmark
+{
+    margin:0;
+    width:30px;
+    height:30px;
+    background-color:#FFF;
+    position:absolute;
+    top:5px;
+    right:10px;
+    bottom:5px;
+    border:1px solid #999;
+    cursor:pointer;
+}
+.container .list-item  .checkmark:after
+{
+    content:"";
+    position:absolute;
+    display:none;
+}
+/*check mark style */
+.container .list-item .checkmark:after 
+{
+    width:17px;
+    height:7px;
+    position:absolute;
+    top:4px;
+    right:3px;
+    border-left:3px solid rgb(255, 0, 0);
+    border-bottom:3px solid rgb(255, 0, 0);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(-45deg);
+    transform:rotate(-45deg);
+}
+/*show check mark when checkbox is checked */
+.container .list-item  input:checked ~ .checkmark:after
+{
+    display:block;
+}
+/*end list-item styling */

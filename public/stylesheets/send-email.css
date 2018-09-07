@@ -1,0 +1,16 @@
+form
+{
+    width:300px;
+    margin:auto;
+    text-align:center;
+}
+form input[type="submit"]
+{
+    color:#FFF;
+    background-color:rgba(32, 155, 32, 0.726);
+    text-transform:uppercase;
+    border:none;
+    padding-top:3px;
+    padding-bottom:3px;
+    cursor:pointer;
+}

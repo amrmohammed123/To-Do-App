@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SignUp</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--my style-->
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+</head>
+<body>    
+    <div class="container1">
+        <p class="flash-message"><%= message %></p>
+        <div class="container">       
+            <form action="/auth/userSignup" method="post">
+                <input type="email" placeholder="&#xf0e0; Email" name="email" required><br>
+                <input type="text" placeholder="&#xf007; UserName" name="username" required><br>
+                <input type="password" placeholder="&#xf023; Password" name="password" required><br>
+                <input type="submit"><br>  
+                <a href="/auth/send-email">forgot your password?</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/signup.js"></script>
+</body>
+</html>

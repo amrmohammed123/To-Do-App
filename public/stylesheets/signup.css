@@ -1,0 +1,98 @@
+*
+{
+    box-sizing:border-box;
+}
+body
+{
+    background-color:rgb(65, 141, 240);
+}
+.flash-message
+{
+    color:#A94442;
+    background-color:#F2DEDE;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+.container1
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    font-size:18px;
+}
+.container
+{
+    width:300px;
+    height:210px;
+    background-color:#FFF;
+}
+.container form
+{
+    text-align:center;
+    width:250px;
+    margin:auto;
+    padding-top:27px;
+}
+.container form a
+{
+    text-decoration:none;
+}
+.container form input
+{
+    width:100%;
+    font-family:Arial, FontAwesome;
+    margin-bottom:10px;
+    padding:5px;
+    border:1px solid #CCC;
+}
+.container form > input[type="submit"]
+{
+    color:#FFF;
+    background-color:rgb(37, 214, 111);
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+.container form div button
+{
+    width:100%;
+    color:#FFF;  
+    border:none;
+    padding:4px;
+    cursor:pointer;  
+}
+.container form div button
+{
+    margin-bottom:6px; 
+    padding:5px;
+}
+.container form div button i
+{
+    float:left;
+    margin-left:10px;
+}
+.container form div button:first-of-type
+{
+    background-color:rgb(206, 39, 39);
+}
+.container form div button:nth-of-type(2)
+{
+    background-color:rgb(47, 53, 133);
+}
+.container form div button:last-of-type
+{
+    background-color:#000000a6;
+}
+@media only screen and (max-width:500px)
+{
+    .container
+    {
+        width:264px;
+    }
+    .container form > input[type="submit"]
+    {
+        padding:4px;
+    }
+}

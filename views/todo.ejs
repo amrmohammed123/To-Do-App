@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--my style-->
+    <link rel="stylesheet" href="/stylesheets/todo.css">
+</head>
+<body>
+    <div class="user-info">
+        <p><%= username %></p>
+        <button id="logout"><a href="/auth/logout">Logout</a></button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+        <div class="add-items">
+            <input type="text"><button id="add">+</button>
+        </div>
+        <% for(let i = 0 ; i < todo.length ; i++){ %>
+        <div class="list-item">
+            <p><%= todo[i] %></p>
+            <input type="checkbox" title="done">
+            <span class="checkmark"></span>
+        </div>  
+        <% } %>          
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/javascripts/todo.js"></script>
+</body>
+</html>
